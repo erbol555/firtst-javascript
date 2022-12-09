@@ -1,0 +1,2 @@
+"user strich";
+alert("text");
