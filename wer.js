@@ -49,3 +49,7 @@ console.log(tun[tun.length - 2]);
 alert(0.1 * 0.23);
 let name = prompt("ведите имя");
 alert("erbol" + name);
+document.write("text <br>");
+document.write("text <br>");
+alert(1024 * 1024);
+document.write(1024 * 1024);
