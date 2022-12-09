@@ -1,2 +1,3 @@
-"user strich";
-alert("text");
+"user strict";
+alert("text"); // user stric //
+/* comment*/
