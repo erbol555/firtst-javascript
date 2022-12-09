@@ -28,3 +28,18 @@ alert(str);
 let text = "java";
 let text1 = "script";
 alert(text + text1);
+let name = "baktiaruuluerbol";
+alert(name.length);
+//----------------Multiline----------
+let ster = `a, 
+b, c`;
+alert(ster);
+let as = 10;
+let ass = 0;
+alert(10 / 0);
+//--------------------Convert to string
+let num = 12345;
+alert(num.length);
+let num1 = 12345;
+alert(String(num).length);
+console.log(num + num1);
