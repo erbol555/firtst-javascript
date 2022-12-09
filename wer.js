@@ -21,3 +21,10 @@ alert(a1);
 //--------------Exponentiation------------
 let a = 2 * 3 ** 2 * 3;
 alert(a);
+//---------------Strings------
+let str = "baktiar uulu erbol";
+alert(str);
+//--------------String addition------------
+let text = "java";
+let text1 = "script";
+alert(text + text1);
