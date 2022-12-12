@@ -219,3 +219,40 @@ switch (lang) {
     console.log("не поддерживается");
     break;
 }
+let num1 = 1;
+let res;
+switch (num) {
+  case 1:
+  case 2:
+    res = "a";
+    break;
+  case 3:
+    res = "b";
+
+    break;
+}
+console.log(res);
+//--------------------Ternary operator in JavaScript----------------
+let num3 = 4;
+
+let res2 = num3 >= 2 ? "aaa" : "bbb";
+console.log(res2);
+let num4 = 19;
+let ress = num4 >= 18 ? "тебе можно" : "нет";
+console.log(ress);
+//--------------------------------Boolean operations in JavaScript--------------------
+
+let a = 2 * (3 - 1);
+let b = 6 - 2;
+console.log(a == b);
+let a1 = 2 * (3 - 1);
+let b1 = 6 - 2;
+let result = a == b;
+console.log(result);
+let c = 5 * (7 - 4);
+let d = 1 + 2 + 7;
+console.log(c > d);
+let c1 = 2 ** 4;
+let d1 = 4 ** 2;
+let result1 = c1 != d1;
+console.log(result1);
