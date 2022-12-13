@@ -256,3 +256,132 @@ let c1 = 2 ** 4;
 let d1 = 4 ** 2;
 let result1 = c1 != d1;
 console.log(result1);
+//-----------------------Validation Function in JavaScript---------------
+let ok = confirm("вам 18 лет ");
+if (ok) {
+  console.log("заходите");
+} else {
+  console.log("нельзя");
+}
+const con = confirm("вы человек или бот");
+if (con) {
+  console.log("заходите");
+} else {
+  console.log("вам нельзя");
+}
+//----------------------------------Variable scope in if-else in JavaScript-----------
+let num6 = 17;
+let adult;
+if (num6 >= 18) {
+  adult = true;
+} else {
+  adult = false;
+}
+console.log(adult);
+
+let age = 17;
+let res3;
+if (age >= 18) {
+  if (17 <= 23) {
+    res3 = "от 18 до 23";
+  } else {
+    res3 = "больше 23";
+  }
+} else {
+  res3 = "меньше 18";
+}
+console.log(res3);
+let age1 = 19;
+let res4;
+if (age1 >= 18) {
+  res4 = true;
+  if (19 <= 23) {
+    res4 = "от 18 до 23";
+  } else {
+    res4 = "больше 23";
+  }
+} else {
+  res4 = "меньше 18";
+}
+console.log(res4);
+const min = 10;
+if (min >= 0 && min <= 14) {
+  console.log("1 четверт");
+}
+if (min >= 15 && min < 29) {
+  console.log("2 четверт");
+}
+if (min >= 30 && min <= 44) {
+  console.log("3четверт");
+}
+if (min >= 45 && min <= 59) {
+  console.log("4 четверт");
+}
+const arr = "12345";
+if (arr.length >= 3) {
+  console.log(arr.length);
+}
+const stre = "1234";
+if ((stre[0] = "a")) {
+  console.log("!");
+}
+const str1 = "12345";
+const last = str1[str1.length - 1];
+if (last == "x") {
+  console.log("X");
+}
+const street = "12345";
+if (street[0] == 1 || street[1] == 1) {
+  console.log("yes");
+}
+const nun = 12345;
+let first = String(nun)[-1];
+if (first == 0) {
+  console.log("first");
+} else {
+  console.log("no");
+}
+const aa = 10;
+const bb = 5;
+console.log(aa % bb);
+let num7 = "123033";
+let sum1 = num7[0] + num7[1] + num7[2];
+let sum2 = num7[3] + num7[4] + num7[5];
+if (sum1 == sum2) {
+  console.log("суммы равны");
+} else {
+  console.log("суммы не равны");
+}
+//---------------------------------------Practice on if-else conditions in JavaScript------------------
+const month = 5;
+switch (month) {
+  case 1:
+    console.log("зима");
+
+    break;
+  case 2:
+    console.log("весна");
+    break;
+  case 4:
+    console.log("лето");
+    break;
+  case 5:
+    console.log("осень");
+}
+const str2 = "abcde";
+if ((str2[0] = "a")) {
+  console.log("да");
+} else {
+  console.log("нет");
+}
+const numbers = 123;
+const numb = String(numbers);
+console.log(numb.length);
+const number = "246012";
+summ = number[0] + number[1] + number[3];
+summ1 = number[4] + number[5] + number[6];
+if (summ == summ1) {
+  console.log("yes!!!");
+} else {
+  console.log("no!!!");
+}
