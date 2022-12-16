@@ -386,13 +386,13 @@
 //   console.log("no!!!");
 // }
 
-const dd = "0";
-if (dd !== 0) {
-  console.log((x = (b / 2) * a));
+const dd = 0;
+if (dd == 0) {
+  console.log("(x = (b / 2) * a)");
 } else if (dd >= 0) {
   if (dd > 0) {
-    console.log((x1 = ""), (x2 = ""));
-  } else if (dd <= 0) {
-    console.log((d = ""));
+    console.log((x1 = "9"), (x2 = "12"));
+  } else if (dd < 0) {
+    console.log("d = !");
   }
 }
