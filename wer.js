@@ -369,7 +369,7 @@
 //     console.log("осень");
 // }
 // const str2 = "abcde";
-// if ((str2[0] = "a")) {
+// if ((str2[0] == "a")) {
 //   console.log("да");
 // } else {
 //   console.log("нет");
@@ -386,13 +386,457 @@
 //   console.log("no!!!");
 // }
 
-const dd = 0;
-if (dd == 0) {
-  console.log("(x = (b / 2) * a)");
-} else if (dd >= 0) {
-  if (dd > 0) {
-    console.log((x1 = "9"), (x2 = "12"));
-  } else if (dd < 0) {
-    console.log("d = !");
+// const dd = 0;
+// if (dd == 0) {
+//   console.log("(x = (b / 2) * a)");
+// } else if (dd >= 0) {
+//   if (dd > 0) {
+//     console.log((x1 = "9"), (x2 = "12"));
+//   } else if (dd < 0) {
+//     console.log("d = !");
+//   }
+// }
+// let d = 0;
+
+// if (d == 0) {
+//   console.log("d is equal to 0");
+// }
+
+// if (d < 0) {
+//   console.log("d is less than 0");
+// } else {
+//   console.log("d is not less than 0");
+// }
+
+// if (d > 0) {
+//   console.log("d is greater than 0");
+// } else {
+//   console.log("d is not greater than 0");
+// }
+// //-------------------------for loop in JavaScript-----------------
+// let i = 1;
+// for (let i = 1; i <= 100; i++) {
+//   console.log(i);
+// }
+// for (let i = 11; i <= 33; i++) {
+//   console.log(i);
+// }
+// for (let i = 0; i <= 100; i += 2) {
+//   console.log(i);
+// }
+// for (let i = 1; i <= 99; i += 2) {
+//   console.log(i);
+// }
+// for (let k = 100; k >= 0; k--) {
+//   console.log(k);
+// }
+//----------------------------------------Перебор массива циклом for-of в JavaScript--------------------------------
+// let lam = ["a", "b", "c", "d"];
+// for (let elem of lam) {
+//   console.log(elem);
+// }
+// //------------------------Iterating over an object with a for-in loop in JavaScript------------------------------
+// let objj = { a: 1, b: 2, c: 3 };
+// for (let key in objj) {
+//   console.log(key);
+// }
+// let object = { a: 1, b: 2, c: 3, d: 4 };
+// for (let key in object) {
+//   console.log(object[key]);
+// }
+// let kat = { x: 1, y: 2, z: 4 };
+// for (let key in kat) {
+//   console.log(kat[key]);
+// }
+// let i = 0;
+// while (i <= 100) {
+//   console.log(i);
+//   i++;
+// }
+// let num = 3;
+// while (num <= 1000) {
+//   console.log(num);
+//   num = num * 3;
+// }
+//----------------------------for loop for arrays in javascript---------------------------
+// let arr = ["a", "b", "c", "d"];
+// for (let i = 0; i <= arr.length - 1; i++) {
+//   console.log(arr[i]);
+// }
+// let arr1 = ["a", "b", "c", "d"];
+// for (let i = 1; i <= [2]; i++) {
+//   console.log(arr1[i]);
+// }
+let arr5 = ["a", "b", "c", "d"];
+for (let i = arr5.length - 1; i >= 0; i--) {
+  console.log(arr5[i]);
+}
+// let arr3 = ["a", "b", "c", "d"];
+// for (let i = arr3.length - 1; i >= 0; i--) {
+//   console.log(arr3[i]);
+// }
+// let arr = [1, 2, 3, 4, 5];
+// for (let elem of arr) {
+//   if (elem % 2 === 0) {
+//     console.log(elem);
+//   }
+// }
+// let arr1 = [2, 5, 9, 15, 1, 4];
+// for (let elem of arr1) {
+//   if (elem > 3 && elem < 10) {
+//     console.log(elem);
+//   }
+// }
+// let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// for (let eleem in obj) {
+//   if (obj[eleem] % 2 !== 0) {
+//     console.log(obj[eleem]);
+//   }
+// }
+// let obj1 = { a: 12, b: 462, c: 2446, d: 23344, e: 345 };
+// for (let key in obj1) {
+//   if (obj1[key] % 3 == 0) {
+//     console.log(obj1[key]);
+//   }
+// }
+//-------------------Accumulating Numbers in JavaScript Loops---------------------
+// let res = 0;
+// for (let i = 1; i <= 100; i++) {
+//   res = res + i;
+// }
+// console.log(res);
+// let num = 2;
+// for (let i = 2; i <= 200; i += 2) {
+//   console.log(i);
+// }
+// let sum = 1;
+// for (let i = 1; i <= 99; i += 2) {
+//   console.log(i);
+// }
+// let num1 = 1;
+// for (let i = 1; i <= 20; i++) {
+//   num1 += i;
+// }
+// console.log(num1);
+// //---------------------------Accumulating Array Elements in JavaScript Loops----------------------
+// let arr = [1, 2, 3, 4, 5];
+// let res = 0;
+// for (let el of arr) {
+//   res += el;
+// }
+// console.log(res);
+// let arr1 = [2, 5, 9, 3, 1, 4];
+// let set = 0;
+// for (let elem of arr1) {
+//   set += elem;
+// }
+// console.log(set);
+// let arr2 = [2, 5, 9, 3, 1, 4];
+// let sum = 0;
+
+// for (let i = 0; i < arr2.length; i++) {
+//   if (arr2[i] % 2 == 0) {
+//     sum += arr2[i];
+//   }
+// }
+// console.log(sum);
+// let arr = [2, 5, 9, 3, 1, 4];
+// let sum1 = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum1 += arr[i] ** 2;
+// }
+// console.log(sum1);
+// let arr2 = [2, 5, 9, 3, 1, 4];
+// sum = 0;
+// for (let elem of arr2) {
+//   sum += elem;
+// }
+// console.log(sum);
+// let str = "";
+// for (let i = 1; i <= 5; i++) {
+//   str += i;
+// }
+// console.log(str);
+// let str1 = "";
+// for (let i = 0; i <= 9; i++) {
+//   str1 += i;
+// }
+// console.log(str1);
+// let str2 = "";
+// for (let i = 9; i >= 1; i--) {
+//   str2 += i;
+// }
+// for (let i = 1; i <= 100; i++) {
+//   let str = String(i); // преобразуем число в строку
+
+//   if (str[0] === "1" || str[0] === "2") {
+//     console.log(i);
+//   }
+// }
+// let sum = 0;
+// for (let i = 10; i <= 1000; i++) {
+//   let str = String(i);
+//   if (str[0] === "5" && str[1] === "5") {
+//     console.log(str);
+//   }
+// }
+// //---------------------------JavaScript break statement---------------------------------------
+// let sam = [1, 2, 3, 4, 5, 6, 0, 9, 78, 6];
+// for (let i = 0; i < sam.length; i++) {
+//   if (sam[i] == 0) {
+//     break;
+//   }
+//   console.log(sam[i]);
+// }
+// let sat = [1, 2, 3, 4, 5, 6, 7, 0, -9, -4];
+// for (let i = 0; i < sat.length; i++) {
+//   if (sat[i] == -9) {
+//     break;
+//   }
+//   console.log(sat[i]);
+// }
+
+// let sum = 1;
+// let i = 1;
+// while (sum <= 100) {
+//   sum += i;
+//   i++;
+// }
+// console.log(i - 1);
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for (let elem of arr) {
+//   let result;
+//   if (elem % 2 === 0) {
+//     result = elem * elem;
+//   } else if (elem % 3 === 0) {
+//     result = elem * elem * elem;
+//   } else {
+//     continue;
+//   }
+
+//   console.log(result);
+// }
+// for (let i = 1; i <= 9; i++) {
+//   for (let j = 1; j <= 3; j++) {
+//     document.write(i);
+//   }
+// }
+// for (let i = 1; i <= 33; i++) {
+//   let str = String(i);
+//   for (let j = 1; j <= 3; j++) {
+//     if (str[1] === "1" && str[1] === "1") {
+//       console.log(i + "" + j);
+//     }
+//   }
+// }
+// //--------------------------------Область видимости в циклах JavaScript---------------------
+// let arr = [];
+// for (let i = 1; i <= 10; i++) {
+//   arr.push(i);
+// }
+// console.log(arr);
+// let arr1 = [];
+// for (let i = 1; i <= 10; i++) {
+//   arr1.push("x");
+// }
+// console.log(arr1);
+// let arr2 = [1, 2, 3, 4, 5, 6];
+// for (let i = 9; i <= 20; i++) {
+//   arr2.push(i);
+// }
+// console.log(arr2);
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr.length; i++) {
+//   arr[i] = arr[i] ** 2;
+// }
+// console.log(arr);
+// let arr1 = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr1.length; i++) {
+//   arr1[i] += 10;
+// }
+// console.log(arr1);
+//-------------------------------Заполнение объектов через цикл в JavaScript-------------
+// let keys = ["a", "b", "c", "d", "e"];
+// let values = [1, 2, 3, 4, 5];
+// let obj = {};
+// for (let i = 0; i <= 4; i++) {
+//   obj[keys[i]] = values[i];
+// }
+// console.log(obj);
+// let arr1 = ["панидельник", "вторник", "среда", "чт", "пт", "субота", "вс"];
+// let arr2 = [1, 2, 3, 4, 5, 6, 7];
+// let obj1 = {};
+// for (let i = 0; i <= 10; i++) {
+//   obj1[arr1[i]] = arr2[i];
+// }
+// console.log(obj1);
+// let obj2 = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// for (let elem in obj2) {
+//   if (obj2[elem] % 2 == 0) {
+//     console.log(obj2[elem]);
+//   }
+// }
+// let obj3 = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// let obj4 = {};
+// for (let key in obj3) {
+//   obj4[obj3[key]] = key;
+// }
+// console.log(obj4);
+// let obj5 = { a: 1, b: 2, c: 3 };
+// for (let key in obj5) {
+//   obj5[key] = obj5[key] ** 2;
+// }
+// console.log(obj5);
+// let arr = ["a", "b", "c", "d", "e"];
+// let flag = false;
+// for (let elem of arr) {
+//   if (elem == 3) {
+//     flag = true;
+//     break;
+//   }
+// }
+// if ((flag = true)) {
+//   console.log("++");
+// } else {
+//   console.log("--");
+// }
+// let arr1 = [3, 11, 26];
+// let Flag = false;
+// for (let el of arr1) {
+//   if (el % 1 === 0) {
+//     Flag = true;
+//     break;
+//   }
+// }
+// if (Flag == true) {
+//   console.log("+++");
+// } else {
+//   console.log("---");
+// }
+// let arr2 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let counter = 0;
+// for (let elem of arr2) {
+//   if (elem == 3 || elem == 2) {
+//     counter++;
+//   }
+// }
+// console.log(counter);
+// let arr3 = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let counter1 = 0;
+// let counter2 = 0;
+// for (let sat of arr3) {
+//   if (sat == 2) {
+//     counter1++;
+//   } else if (sat == 3) {
+//     counter2++;
+//   }
+// }
+// console.log(`two:${counter1} , three:${counter2}`);
+// let str = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+// let count = {};
+// for (let sam of str) {
+//   if (count[sam] === undefined) {
+//     count[sam] = 1;
+//   } else {
+//     count[sam]++;
+//   }
+// }
+// console.log(count);
+// let str1 = [1, 2, 3, 4, 5, 6];
+// for (let i = 1; i <= str1.length; i++) {
+//   console.log(str[i - 1] + str1[i]);
+// }
+// let ar = [10, 20, 30, 40, 21, 32, 51];
+// let st = String(ar);
+// let sum = 0;
+// for (let tel of ar) {
+//   if (tel[0] == 1 || tel[1] == 2) {
+//     console.log(tel);
+//   }
+// }
+// for (let i = 0; i <= 100; i += 2) {
+//   console.log(i);
+// }
+// let as = [];
+// for (let i = 1; i <= 10; i++) {
+//   as.push("x");
+// }
+// console.log(as);
+// let ad = [];
+// for (let i = 10; i > 0; i--) {
+//   ad.push(i);
+// }
+// console.log(ad);
+// let str = [1, 3, 4, 5, 6, 12, 23, , 2, 12];
+// for (let el of str) {
+//   if (el >= 0 && el <= 10) {
+//     console.log(el);
+//   }
+// }
+// let str1 = [1, 2, 3, 4, 5, 6];
+// for (let el1 of str1) {
+//   if (el1 == 3) {
+//     console.log("yes");
+//     break;
+//   } else {
+//     console.log("no");
+//   }
+// }
+// let arr = [1, 2, 3, 4, 5, 56];
+
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i] ** 2;
+// }
+// console.log(sum);
+// let arr1 = [1, 2, 3, 4, 5];
+// let sas = 0;
+// for (let all of arr1) {
+//   sas += all;
+// }
+// console.log(sas);
+// let arr2 = [1, 2, 3, 4, 5];
+// let sum1 = 0;
+// for (let elem of arr2) {
+//   sum1 += elem / 5;
+// }
+// console.log(sum1);
+// for (let i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+
+let arr2 = [1, 2, 3, 5, 6, 7];
+for (let i = arr2.length; i >= 0; i--) {
+  console.log(arr2[i]);
+}
+let arr = [1, 2, 3, 4, 5];
+for (let i = 1; i <= arr.length; i++) {
+  document.write(i + "<br>");
+}
+let month = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+for (let i = 0; i < month.length; i++) {
+  let day = month[i];
+  if (day == "сб" && day == "вс") {
+    document.write(`<b>${day}<b>`);
+  } else {
+    console.log(day);
   }
 }
+let obj = {
+  employee1: 100,
+  employee2: 200,
+  employee3: 300,
+  employee4: 400,
+  employee5: 500,
+  employee6: 600,
+  employee7: 700,
+};
+
+let b = [1, 3, 4, 23, 12, 23, 5, 4];
+let a = 0;
+for (let i = 0; i < b.length; i++) {
+  a += b[i] ** 2;
+}
+console.log(a);
