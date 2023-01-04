@@ -467,10 +467,10 @@
 // for (let i = 1; i <= [2]; i++) {
 //   console.log(arr1[i]);
 // }
-let arr5 = ["a", "b", "c", "d"];
-for (let i = arr5.length - 1; i >= 0; i--) {
-  console.log(arr5[i]);
-}
+// let arr5 = ["a", "b", "c", "d"];
+// for (let i = arr5.length - 1; i >= 0; i--) {
+//   console.log(arr5[i]);
+// }
 // let arr3 = ["a", "b", "c", "d"];
 // for (let i = arr3.length - 1; i >= 0; i--) {
 //   console.log(arr3[i]);
@@ -807,36 +807,695 @@ for (let i = arr5.length - 1; i >= 0; i--) {
 //   console.log(i);
 // }
 
-let arr2 = [1, 2, 3, 5, 6, 7];
-for (let i = arr2.length; i >= 0; i--) {
-  console.log(arr2[i]);
-}
-let arr = [1, 2, 3, 4, 5];
-for (let i = 1; i <= arr.length; i++) {
-  document.write(i + "<br>");
-}
-let month = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
-for (let i = 0; i < month.length; i++) {
-  let day = month[i];
-  if (day == "сб" && day == "вс") {
-    document.write(`<b>${day}<b>`);
-  } else {
-    console.log(day);
-  }
-}
-let obj = {
-  employee1: 100,
-  employee2: 200,
-  employee3: 300,
-  employee4: 400,
-  employee5: 500,
-  employee6: 600,
-  employee7: 700,
+// let arr2 = [1, 2, 3, 5, 6, 7];
+// for (let i = arr2.length; i >= 0; i--) {
+//   console.log(arr2[i]);
+// }
+// let arr = [1, 2, 3, 4, 5];
+// for (let i = 1; i <= arr.length; i++) {
+//   document.write(i + "<br>");
+// }
+// let month = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"];
+// for (let i = 0; i < month.length; i++) {
+//   let day = month[i];
+//   if (day == "сб" && day == "вс") {
+//     document.write(`<b>${day}<b>`);
+//   } else {
+//     console.log(day);
+//   }
+// }
+// let obj = {
+//   employee1: 100,
+//   employee2: 200,
+//   employee3: 300,
+//   employee4: 400,
+//   employee5: 500,
+//   employee6: 600,
+//   employee7: 700,
+// };
+
+// let b = [1, 3, 4, 23, 12, 23, 5, 4];
+// let a = 0;
+// for (let i = 0; i < b.length; i++) {
+//   a += b[i] ** 2;
+// }
+// console.log(a);
+// for (let i = 10; i >= 0; i--) {
+//   console.log(i);
+// }
+// let sum = [1, 2, 3, 4, 5, -7, -6, -5];
+// let s = 0;
+// for (let doll of sum) {
+//   if (doll > 0) {
+//     s += doll;
+//   }
+//   console.log(s);
+// }
+// let arr4 = [10, 20, 30, 50, 235, 3000];
+// for (let i = 0; i < arr4.length; i++) {
+//   if (arr4[i][0] === "1" || arr4[i][0] === "2" || arr4[i][0] === "5") {
+//     console.log(arr4[i]);
+//   }
+// }
+
+// let arr = [10, 20, 30, 50, 235, 3000];
+// for (let i = 0; i < arr.length; i++) {
+//   if (
+//     String(arr[i])[0] == 1 ||
+//     String(arr[i])[0] == 2 ||
+//     String(arr[i])[0] == 5
+//   ) {
+//     console.log(arr[i]);
+//   }
+// }
+
+// let arr12 = [10, 20, 30, 50, 235, 3000];
+// for (let i = arr12)
+
+// let obj = {
+//   employee1: 100,
+//   employee2: 200,
+//   employee3: 300,
+//   employee4: 400,
+//   employee5: 500,
+//   employee6: 600,
+//   employee7: 700,
+// };
+// let sum = 0;
+// for (let key in obj) {
+//   if (obj[key] % 10) {
+//     console.log(obj[key]);
+//   }
+// }
+// let sum1 = 0;
+// for (let i = 35; i <= 87; i++) {
+//   if (i % 7 == 1 || i % 7 == 2 || i % 7 == 5) {
+//     console.log(i);
+//   }
+// }
+
+// let num = 7;
+// let flag = true;
+
+// for (let i = 2; i < num; i++) {
+//   if (num % i === 0 ) {
+//     flag = false
+//     break
+//   }
+// }
+
+// let num = 100;
+// let flag = true;
+
+// for (let i = 2; i <= 100; i++) {
+//   for (let doll = 2; doll < i; doll++) {
+//     if (i % doll === 0) {
+//       flag = false;
+//       break;
+//     }
+//     console.log(i);
+//   }
+// }
+
+// if (flag) console.log("простое");
+// else console.log("не простое");
+
+// for (let i = 100; i > 0; i--) {
+//   console.log(i);
+// }
+// let sol = [1, 2, 3, 4, 5, 6];
+// let dol = [];
+// for (let i = 10; i > 0; i--) {
+//   dol.push(i);
+// }
+// console.log(dol);
+// let arr = [10, 20, 30, 50, 235, 3000];
+// let flag = true;
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] ** 2) {
+//     console.log(arr[i]);
+//   }
+// }
+// let str = 123;
+// let saw = 0;
+// let str1 = String(str);
+
+// if (str1[0] + str1[1] + str1[2]) {
+//   console.log(str1);
+// } else {
+//   console.log("no");
+// }
+// let num = "246246";
+
+// // let sum;
+// // let sum1;
+// sum = num[0] + num[1] + num[2];
+// sum1 = num[3] + num[4] + num[5];
+
+// if (sum == sum1) {
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
+// let san = [];
+// for (let i = 1; i <= 10; i++) {
+//   san.push("x");
+// }
+// console.log(san);
+// let arr2 = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+// let sum6 = 0;
+// sum6 +=
+//   arr2[0][0] + arr2[0][1] + arr2[1][0] + arr2[1][1] + arr2[2][0] + arr2[2][1];
+// console.log(sum6);
+// let arr = [
+//   [
+//     [1, 2],
+//     [3, 4],
+//   ],
+//   [
+//     [5, 6],
+//     [7, 8],
+//   ],
+// ];
+// let sum = 0;
+// sum +=
+//   arr[0][0][0] +
+//   arr[0][0][1] +
+//   arr[0][1][0] +
+//   arr[0][1][1] +
+//   arr[1][0][0] +
+//   arr[1][0][1] +
+//   arr[1][1][1] +
+//   arr[1][1][0];
+
+// console.log(sum);
+// let arr1 = [
+//   [1, 2, 3, 4, 5],
+//   [6, 7, 8],
+//   [9, 10],
+// ];
+// for (let subarr of arr1) {
+//   for (let elem of subarr) {
+//     console.log(elem);
+//   }
+// }
+// let arr = [[1, 2, 3], [4, 5], [6]];
+// let sum = 0;
+// for (let subarr of arr) {
+//   for (let elem of subarr) {
+//     sum += elem;
+//   }
+//   console.log(sum);
+// }
+// let arr1 = [[1, 2, 3], [4, 5], [6]];
+// let sum1 = 0;
+// for (let i = 0; i < arr1.length; i++) {
+//   for (let j = 0; j < arr1[i].length; j++) {
+//     sum1 += arr1[i][j];
+//   }
+// }
+// console.log(sum1);
+// let arr2 = [
+//   [
+//     [1, 2],
+//     [3, 4],
+//   ],
+//   [
+//     [5, 6],
+//     [7, 8],
+//   ],
+// ];
+// let sum2 = 0;
+// for (let i = 0; i < arr2.length; i++) {
+//   for (let j = 0; j < arr2[i].length; j++) {
+//     for (let k = 0; k < arr2[i][j].length; k++) {
+//       sum2 += arr2[i][j][k];
+//     }
+//   }
+// }
+// console.log(sum2);
+// let arr3 = [];
+// for (let i = 0; i < 3; i++) {
+//   arr3[i] = [];
+//   for (let j = 0; j < 5; j++) {
+//     arr3[i].push(j + 1);
+//   }
+// }
+// console.log(arr3);
+// let arr = [];
+// for (let i = 0; i < 3; i++) {
+//   arr[i] = [];
+//   for (let j = 0; j < 4; j++) {
+//     arr[i].push("x");
+//   }
+// }
+// console.log(arr);
+// let arr1 = [];
+// for (let i = 0; i < 3; i++) {
+//   arr1[i] = [];
+//   for (let j = 0; j < 2; j++) {
+//     arr1[i][j] = [];
+//     for (let k = 0; k < 5; k++) {
+//       arr1[i][j][k] = k + 1;
+//     }
+//   }
+// }
+// console.log(arr1);
+// let arr = [];
+
+// for (let i = 0; i < 3; i++) {
+//   arr[i] = [];
+
+//   for (let j = 1; j <= 5; j++) {
+//     arr[i].push(j);
+//   }
+// }
+
+// console.log(arr);
+// let arr2 = [];
+// let sum = 1;
+// for (let i = 0; i < 4; i++) {
+//   arr2[i] = [];
+//   for (let j = 0; j < 2; j++) {
+//     arr2[i][j] = i * 2 + j + 1;
+//   }
+// }
+// console.log(arr2);
+// let arr4 = [];
+// for (let i = 0; i < 4; i++) {
+//   arr4[i] = [];
+//   for (let j = 0; j < 3; j++) {
+//     arr4[i][j] = 2 * (i * 3 + j + 1);
+//   }
+// }
+// console.log(arr4);
+// let sar = [];
+// for (let i = 0; i < 4; i++) {
+//   sar[i] = [];
+//   for (let j = 0; j < 2; j++) {
+//     sar[i][j] = [];
+//     for (let k = 0; k < 2; k++) {
+//       sar[i][j] = 1 * (i * 2 + j + 1);
+//     }
+//   }
+// }
+// console.log(sar);
+// let arr = [];
+
+// for (let i = 0, k = 1; i < 3; i++) {
+//   arr[i] = [];
+
+//   for (let j = 0; j < 3; j++) {
+//     arr[i][j] = k++;
+//   }
+// }
+
+// console.log(arr);
+// //---------------------------Multidimensional Objects in JavaScript------------------
+// let obj = {
+//   key1: {
+//     key1: 1,
+//     key2: 2,
+//     key3: 3,
+//   },
+//   key2: {
+//     key1: 4,
+//     key2: 5,
+//     key3: 6,
+//   },
+//   key3: {
+//     key1: 7,
+//     key2: 8,
+//     key3: 9,
+//   },
+// };
+// console.log(
+//   obj.key1.key1 +
+//     obj.key1.key2 +
+//     obj.key1.key3 +
+//     obj.key2.key1 +
+//     obj.key2.key2 +
+//     obj.key2.key3 +
+//     obj.key3.key1 +
+//     obj.key3.key2 +
+//     obj.key3.key3
+// );
+// let obj1 = {
+//   1: {
+//     1: "a1",
+//     2: "a2",
+//     3: "a3",
+//   },
+//   2: {
+//     1: "b1",
+//     2: "b2",
+//     3: "b3",
+//   },
+//   3: {
+//     1: "c1",
+//     2: "c2",
+//     3: "c3",
+//   },
+// };
+// console.log(obj1[2][2] + " " + obj1[3][1]);
+// let obj2 = {
+//   key1: {
+//     a: 1,
+//     b: 2,
+//     c: {
+//       d: 3,
+//       e: 4,
+//     },
+//     f: 5,
+//   },
+//   key2: {
+//     g: 6,
+//     h: 7,
+//   },
+// };
+// console.log(
+//   obj2.key1["a"] +
+//     obj2.key1["b"] +
+//     obj2.key1["c"]["d"] +
+//     obj2.key1["c"]["e"] +
+//     obj2.key1["f"] +
+//     obj2.key2["g"] +
+//     obj2.key2["h"]
+// );
+//--------------------terating over multidimensional objects in JavaScript----------
+// let sum = 0;
+// let obj3 = {
+//   1: {
+//     1: 11,
+//     2: 12,
+//     3: 13,
+//   },
+//   2: {
+//     1: 21,
+//     2: 22,
+//     3: 23,
+//   },
+//   3: {
+//     1: 24,
+//     2: 25,
+//     3: 26,
+//   },
+// };
+// for (let key in obj3) {
+//   let subobj = obj3[key];
+//   for (let sanobj in subobj) {
+//     sum += subobj[sanobj];
+//   }
+// }
+// console.log(sum);
+// let sum1 = 0;
+// let obj = {
+//   1: {
+//     1: {
+//       1: 111,
+//       2: 112,
+//       3: 113,
+//     },
+//     2: {
+//       1: 121,
+//       2: 122,
+//       3: 123,
+//     },
+//   },
+//   2: {
+//     1: {
+//       1: 211,
+//       2: 212,
+//       3: 213,
+//     },
+//     2: {
+//       1: 221,
+//       2: 222,
+//       3: 223,
+//     },
+//   },
+//   3: {
+//     1: {
+//       1: 311,
+//       2: 312,
+//       3: 313,
+//     },
+//     2: {
+//       1: 321,
+//       2: 322,
+//       3: 323,
+//     },
+//   },
+// };
+// for (let key in obj) {
+//   let subbobj = obj[key];
+//   for (let adobj in subbobj) {
+//     let aobj = subbobj[adobj];
+//     for (let werobj in aobj) {
+//       sum1 += aobj[werobj];
+//     }
+//   }
+// }
+// console.log(sum1);
+// let students = {
+//   group1: ["name11", "name12", "name13"],
+//   group2: ["name21", "name22", "name23"],
+//   group3: ["name31", "name32", "name33"],
+// };
+// console.log(students["group3"][0]);
+// //---------------------------------Iterating over multidimensional JavaScript structures-----------------
+// let data = {
+//   1: ["data11", "data12", "data13"],
+//   2: ["data21", "data22", "data23"],
+//   3: ["data31", "data32", "data33"],
+//   4: ["data41", "data42", "data43"],
+// };
+// for (let key in data) {
+//   let wedata = data[key];
+//   for (let werdata of wedata) {
+//     console.log(werdata);
+//   }
+// }
+// let data1 = [
+//   {
+//     1: "data11",
+//     2: "data12",
+//     3: "data13",
+//   },
+//   {
+//     1: "data21",
+//     2: "data22",
+//     3: "data33",
+//   },
+//   {
+//     1: "data31",
+//     2: "data32",
+//     3: "data33",
+//   },
+// ];
+// for (let subdata of data1) {
+//   for (let key in subdata) {
+//     console.log(subdata[key]);
+//   }
+// }
+// let data2 = [
+//   {
+//     1: ["data111", "data112", "data113"],
+//     2: ["data121", "data122", "data123"],
+//   },
+//   {
+//     1: ["data211", "data212", "data213"],
+//     2: ["data221", "data222", "data223"],
+//   },
+//   {
+//     1: ["data411", "data412", "data413"],
+//     2: ["data421", "data422", "data423"],
+//   },
+// ];
+// for (let sdata of data2) {
+//   for (let keybord in sdata) {
+//     let saydate = sdata[keybord];
+//     for (let ddata of saydate) {
+//       console.log(ddata);
+//     }
+//   }
+// }
+//------------------------Массив объектов в JavaScript------------------
+// let employees = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//   },
+// ];
+// for (let emploe of employees) {
+//   console.log(emploe.name + " " + emploe.salary);
+// }
+// let sum = 0;
+// let employees1 = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//   },
+// ];
+// for (let emploer of employees1) {
+//   sum += emploer.salary;
+// }
+// console.log(sum);
+// let sum2 = 0;
+// let employees2 = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//     age: 28,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//     age: 29,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//     age: 30,
+//   },
+//   {
+//     name: "name4",
+//     salary: 600,
+//     age: 31,
+//   },
+//   {
+//     name: "name5",
+//     salary: 700,
+//     age: 32,
+//   },
+// ];
+// for (let employeess of employees2) {
+//   if (employeess.age >= 30) {
+//     sum2 += employeess.salary;
+//   }
+// }
+// console.log(sum2);
+// //-----------------------------Ключи из переменных в многомерных структурах JavaScript--------------------------------
+
+// let affairs = {
+//   2018: {
+//     11: {
+//       29: ["дело111", "дело112", "дело113"],
+//       30: ["дело121", "дело122", "дело123"],
+//     },
+//     12: {
+//       30: ["дело211", "дело212", "дело213"],
+//       31: ["дело221", "дело222", "дело223"],
+//     },
+//   },
+//   2019: {
+//     12: {
+//       29: ["дело311", "дело312", "дело313"],
+//       30: ["дело321", "дело322", "дело323"],
+//       31: ["дело331", "дело332", "дело333"],
+//     },
+//   },
+// };
+// for (let key in affairs) {
+//   let affar = affairs[key];
+//   for (let saffar in affar) {
+//     let saffary = affar[saffar];
+//     for (let sybaffar in saffary) {
+//       let sabaffarirs = saffary[sybaffar];
+//       for (let affa of sabaffarirs) {
+//         console.log(affa);
+//       }
+//     }
+//   }
+// }
+// let obj = {
+//   key1: {
+//     key2: "12",
+//     key3: "13",
+//   },
+//   key2: {
+//     key4: "24",
+//     key5: "25",
+//   },
+// };
+
+// let key1 = "key2";
+// let key2 = "key4";
+// console.log(obj[key1][key2]);
+// let employees = [
+//   {
+//     name: "name1",
+//     salary: 300,
+//     age: 28,
+//   },
+//   {
+//     name: "name2",
+//     salary: 400,
+//     age: 29,
+//   },
+//   {
+//     name: "name3",
+//     salary: 500,
+//     age: 30,
+//   },
+// ];
+// employees.push({
+//   name: "name4",
+//   salary: 600,
+//   age: 31,
+// });
+// console.log(employees);
+//----------------------Добавление элементов в многомерные объекты JavaScript---------------
+let affairs = {
+  "2019-12-28": ["data11", "data12", "data13"],
+  "2019-12-29": ["data21", "data22", "data23"],
+  "2019-12-30": ["data31", "data32", "data33"],
 };
 
-let b = [1, 3, 4, 23, 12, 23, 5, 4];
-let a = 0;
-for (let i = 0; i < b.length; i++) {
-  a += b[i] ** 2;
-}
-console.log(a);
+affairs["2019-12-29"].push("data24");
+affairs["2019-12-31"] = [];
+
+console.log(affairs);
+let students = {
+  group1: {
+    subgroup11: ["student111", "student112", "student113"],
+    subgroup12: ["student121", "student122", "student123"],
+  },
+  group2: {
+    subgroup21: ["student211", "student212", "student213"],
+    subgroup22: ["student221", "student222", "student223"],
+  },
+  group3: {
+    subgroup31: ["student311", "student312", "student313"],
+    subgroup32: ["student321", "student322", "student323"],
+  },
+};
+students.group1["subgroup13"] = ["student", "student", "student"];
+students.group4 = {
+  subgroup41: ["student411", "student412"],
+  subgroup42: ["student415", "student416"],
+};
+students.group4.subgroup42.push("student417", "student418");
+students.group4["subgroup41"].push("student413", "student414");
+
+console.log(students);
