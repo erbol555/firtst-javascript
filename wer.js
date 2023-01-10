@@ -1466,36 +1466,100 @@
 // });
 // console.log(employees);
 //----------------------Добавление элементов в многомерные объекты JavaScript---------------
-let affairs = {
-  "2019-12-28": ["data11", "data12", "data13"],
-  "2019-12-29": ["data21", "data22", "data23"],
-  "2019-12-30": ["data31", "data32", "data33"],
-};
+// let affairs = {
+//   "2019-12-28": ["data11", "data12", "data13"],
+//   "2019-12-29": ["data21", "data22", "data23"],
+//   "2019-12-30": ["data31", "data32", "data33"],
+// };
 
-affairs["2019-12-29"].push("data24");
-affairs["2019-12-31"] = [];
+// affairs["2019-12-29"].push("data24");
+// affairs["2019-12-31"] = [];
 
-console.log(affairs);
-let students = {
-  group1: {
-    subgroup11: ["student111", "student112", "student113"],
-    subgroup12: ["student121", "student122", "student123"],
-  },
-  group2: {
-    subgroup21: ["student211", "student212", "student213"],
-    subgroup22: ["student221", "student222", "student223"],
-  },
-  group3: {
-    subgroup31: ["student311", "student312", "student313"],
-    subgroup32: ["student321", "student322", "student323"],
-  },
-};
-students.group1["subgroup13"] = ["student", "student", "student"];
-students.group4 = {
-  subgroup41: ["student411", "student412"],
-  subgroup42: ["student415", "student416"],
-};
-students.group4.subgroup42.push("student417", "student418");
-students.group4["subgroup41"].push("student413", "student414");
+// console.log(affairs);
+// let students = {
+//   group1: {
+//     subgroup11: ["student111", "student112", "student113"],
+//     subgroup12: ["student121", "student122", "student123"],
+//   },
+//   group2: {
+//     subgroup21: ["student211", "student212", "student213"],
+//     subgroup22: ["student221", "student222", "student223"],
+//   },
+//   group3: {
+//     subgroup31: ["student311", "student312", "student313"],
+//     subgroup32: ["student321", "student322", "student323"],
+//   },
+// };
+// students.group1["subgroup13"] = ["student", "student", "student"];
+// students.group4 = {
+//   subgroup41: ["student411", "student412"],
+//   subgroup42: ["student415", "student416"],
+// };
+// students.group4.subgroup42.push("student417", "student418");
+// students.group4["subgroup41"].push("student413", "student414");
 
-console.log(students);
+// console.log(students);
+//--------------------------Standard Methods-----------------------
+// console.log(2 ** 10);
+// console.log(Math.sqrt(245));
+// let sas = [4, 2, 5, 19, -13, 0, 10];
+// let sum = 0;
+// for (let retro of sas) {
+//   sum += retro ** 3;
+// }
+// console.log(sum);
+
+// console.log(Math.sqrt(379));
+// let san = 19.467922333931785;
+// console.log(san.toFixed(4));
+// console.log(Math.sqrt(587));
+// let sum1 = 24.228082879171435;
+// console.log(Math.floor(sum1));
+// console.log(Math.ceil(sum1));
+// console.log(Math.max(4, -2, 5, 19, -130, 0, 10));
+// console.log(Math.min(4, -2, 5, 19, -130, 0, 10));
+// let max = Math.max.apply(null, sas);
+// console.log(max);
+// let min = Math.min.apply(null, sas);
+// console.log(min);
+// console.log(Math.pow(6, 7));
+// function getRandomInt(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log(getRandomInt(1, 100));
+// let arr = [];
+// for (let i = 1; i < 10; i++) {
+//   arr.push(getRandomInt(1, 100));
+// }
+// console.log(arr);
+// let a = "a";
+// let bb = "b";
+
+// console.log(Math.abs(a && bb));
+// let god = "JS";
+// console.log(god.toLowerCase());
+// let str = "я учу javascript";
+// let sub = str.substring(1, 5);
+// console.log(sub);
+// let sub1 = str.slice(6);
+// console.log(sub1);
+// let sub2 = str.slice(2, 5);
+// console.log(sub2);
+// let abs = "abcde";
+// console.log(abs.indexOf("http://"));
+// let sab = "1-2-3-4-5";
+
+// console.log(sab.split("-"));
+// let str5 = [1, 2, 3];
+// str5.unshift(4, 5);
+// console.log(str5);
+// let str2 = ["1", "2", "3"];
+// let subb = str2.shift();
+// console.log(subb);
+// let str3 = ["1", "2", "3"];
+// let subb1 = str3.pop();
+// console.log(subb1);
+// let str6 = [1, 2, 3, 4, 5];
+// let tel = str6.slice(1);
+// console.log(tel);
