@@ -904,10 +904,11 @@
 //   }
 // }
 
-// let num = 100;
+// let num9 = 100;
+// let dad = String(num9);
 // let flag = true;
 
-// for (let i = 2; i <= 100; i++) {
+// for (let i = 2; i < 100; i++) {
 //   for (let doll = 2; doll < i; doll++) {
 //     if (i % doll === 0) {
 //       flag = false;
@@ -1563,3 +1564,230 @@
 // let str6 = [1, 2, 3, 4, 5];
 // let tel = str6.slice(1);
 // console.log(tel);
+// let result = "word1 word2 word3";
+// let mas = result.split(" ");
+// for (let i = 0; i < mas.length; i++) {
+//   mas[i] = mas[i].slice(0, 1).toUpperCase() + mas[i].slice(1);
+//   let sad = mas.join(" ");
+//   console.log(sad);
+// }
+// let result1 = "var_test_text";
+// let sum = result1.split("_");
+// for (let i = 0; i < sum.length; i++) {
+//   sum[i] = sum[i].slice(0, 1).toUpperCase() + sum[i].slice(1);
+//   let sub = sum.join("");
+
+//   console.log(sub);
+// }
+// let str = "erbol";
+// let str1 = str.split("").reverse().join("");
+// console.log(str1);
+// let num5 = 12345;
+// let sum1 = 1;
+
+// let arr = String(num5);
+// let arr1 = arr.split("");
+
+// for (let elem of arr1) {
+//   sum1 *= Number(elem);
+// }
+// console.log(sum1);
+// let str = 1234567;
+// let sum = 0;
+// let substring = String(str).split("");
+
+// for (let elel of substring) {
+//   sum += Number(elel);
+// }
+// console.log(sum);
+
+// let san = [4, 2, 5, 19, 13, 0, 10];
+// let summ = 0;
+// for (let subsan of san) {
+//   summ += subsan ** 3;
+// }
+// console.log(Math.sqrt(summ));
+// let slo = "erbol";
+// let slo1 = slo.split("").reverse().join("");
+// console.log(slo1);
+
+// // function fanng() {
+// //   for (let i = 0; i <= 100; i++) {
+// //     console.log(i);
+// //   }
+// // }
+// // fanng();
+// let num = -3;
+// function fan() {
+//   if (num > 0) {
+//     console.log("+++");
+//   } else if (num < 0) {
+//     console.log("---");
+//   }
+// }
+
+// fan();
+// function funct(elem1, elem2, elem3) {
+//   console.log(elem1 + elem2 + elem3);
+// }
+// funct(5, 6, 7);
+// function fun() {
+//   let param1 = 1;
+//   let param2 = 2;
+//   let param3 = 3;
+//   console.log(param1 + param2 + param3);
+// }
+// fun();
+// function func(num = 5) {
+//   console.log(num * num);
+// }
+// func(2);
+// func(3);
+// func();
+// function fanng(num) {
+//   return num ** 2;
+// }
+// let res = fanng(4) + fanng(3);
+// // console.log(res);
+// function sqrt(num) {
+//   return num * 2;
+// }
+
+// function round(num) {
+//   return num.toFixed(3);
+// }
+// let sq = sqrt(4);
+// console.log(sq);
+// function func(num) {
+//   let sum = 0;
+
+//   for (let i = 1; i <= num; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+
+// console.log(func(5));
+// function funct(num) {
+//   let sum = 0;
+//   for (let i = 0; i <= num; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// }
+// console.log(funct(3));
+// function func(arr) {
+//   let sum = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+
+//     // Если сумма больше или равна 10:
+//     if (sum >= 5) {
+//       return i + 1; // выходим из цикла и из функции
+//     }
+//   }
+// }
+
+// let res = func([1, 2, 3, 4, 5]);
+// console.log(res);
+// let sa = 100;
+// for (i = 0; i <= 100; i += 2) {
+//   console.log(i);
+// }
+// function func() {
+//   let sum = 0;
+//   let i = 1;
+
+//   while (true) {
+//     // бесконечный цикл
+//     sum += i % 2;
+
+//     if (sum <= 10) {
+//       return i; // цикл крутится пока не выйдет тут
+//     }
+
+//     i++;
+//   }
+// }
+
+// console.log(func());
+// function func() {
+//   let sum = 0;
+//   while (sum <= 10) {
+//     sum = sum / 2;
+//   }
+//   return sum;
+// }
+// function divideUntilLessThan10(num) {
+//   let iterations = 0;
+//   while (num >= 10) {
+//     num = num / 2;
+//     iterations++;
+//   }
+//   return iterations;
+// }
+// function fung(arr) {
+//   let sum = 0;
+//   let i = 1;
+//   while (true) {
+//     sum += i;
+
+//     if (sum >= 1000) {
+//       return i;
+//     }
+//     i++;
+//   }
+// }
+// console.log(fung());
+// function fang() {
+//   let sun = 1;
+//   let k = 2;
+//   while (true) {
+//     sun = sun / k;
+//     if (sun >= 10) {
+//       return k;
+//     }
+//     k++;
+//   }
+// }
+// console.log(fang());
+function func(num) {
+  let res;
+
+  if (num >= 0) {
+    res = Math.sqrt(num);
+  } else {
+    res = 0;
+  }
+
+  return res;
+}
+
+console.log(func(-9));
+function fang(sam) {
+  let ser;
+  if (sam >= 0) {
+    ser = Math.sqrt(sam);
+  } else {
+    ser = 0;
+  }
+  return ser;
+}
+console.log(fang(25));
+function fungg(sum) {
+  let sum1 = 0;
+  while (sum >= 10) {
+    sum = sum / 2;
+    sum1++;
+  }
+  return sum1;
+}
+function fan(sum2, sum3) {
+  if (sum2 > 0 && sum3 > 0) {
+    return sum2 * sum3;
+  } else {
+    return sum2 - sum3;
+  }
+}
+console.log(fan(-3, -4));
